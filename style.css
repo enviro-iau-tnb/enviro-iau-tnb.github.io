@@ -61,6 +61,7 @@ p
     max-width: 900px;
     text-align: center;
 
+    margin: 10px;
 }
 
 /* "Banner -> Content -> h2". */
@@ -75,7 +76,9 @@ p
 {
     font-size: 1.5em;
     color: #27541d;
-    text-shadow: 1px 1px black;
+    
+    background-color: rgba(255, 251, 0, 0.9);
+    border-radius: 10px;
 }
 
 /* "Banner -> Content -> Button" */
@@ -487,6 +490,15 @@ header.sticky .navigation li a:hover
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    .banner .content h2
+    {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 7px;
+
+        border-radius: 10px;
     }
 }
 
