@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'B Nazanin';
+    src: url('./fonts/BNazanin.woff2') format('woff2'),
+        url('./fonts/BNazanin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* HTML Macro */
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* All parts. */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'B Nazanin', sans-serif;
+
+    transition: 0.3s;
+}
+
+/* TODO: Remove. */
+body
+{
+    align-items: center;
+    justify-content: center;
+}
+
+/* All paragraphs. */
+p
+{
+    font-weight: 300;
+    color: black;
+
+}
+
+/* "Banner" class. */
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("./images/mainBanner.jpg");
+    background-size: cover;
+
+    cursor: default;
+}
+
+/* "Banner -> Content" class. */
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+
+}
+
+/* "Banner -> Content -> h2". */
+.banner .content h2
+{
+    font-size: 4.5em;
+    color: black;
+}
+
+/* "Banner -> Content -> p" */
+.banner .content p
+{
+    font-size: 1.5em;
+    color: #27541d;
+    text-shadow: 1px 1px black;
+}
+
+/* "Banner -> Content -> Button" */
+.btn
+{
+    font-size: 2em;
+    color: white;
+    background: #407035;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+
+    border-style: outset;
+    border-radius: 10px;
+    border-color: black;
+
+    transition: 0.5s;
+}
+
+/* "Banner -> Content -> Button: Hover event" */
+.btn:hover
+{
+    border-style: dashed;
+    border-radius: 20px;
+    border-color: yellow;
+    color: yellow;
+}
+
+/* Main menu */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 87px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.3s;
+
+}
+
+/* Main menu STICKY */
+header.sticky
+{
+    background: white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    transition: 0.25s;
+}
+header.sticky .logo:hover
+{
+    color: darkcyan;
+
+    transition: 0.25s;
+}
+
+/* Main menu -> Logo */
+header .logo
+{
+    color: white;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-decoration: none;
+
+    color: darkgreen;
+
+    transition: 0.25s;
+}
+header .logo:hover
+{
+    color: white;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-decoration: none;
+
+    color: royalblue;
+
+    transition: 0.25s;
+}
+
+/* Main menu -> Logo -> Span */
+header .logo span
+{
+    color: #407035;
+    font-size: larger;
+}
+
+/* Main menu -> Navigation */
+header .navigation
+{
+    position: relative;
+    display: flex;
+
+    transition: 0.25s;
+}
+
+/* Main menu -> Navigation -> List items  */
+header .navigation li
+{
+    list-style: none;
+    margin-left: 27px;
+
+    transition: 0.25s;
+}
+header.sticky .navigation li
+{
+    transition: 0.25s;
+}
+
+/* Main menu -> Navigation -> List items -> Menus  */
+header .navigation li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    padding: 20px;
+
+    /* transition: 0.25s; */
+}
+header .navigation li a:hover
+{
+    color: green;
+
+    /* transition: 0.25s; */
+}
+header.sticky .navigation li a
+{
+    border-style: none;
+    color: black;
+
+    /*transition: 0.25s;*/
+}
+
+header.sticky .navigation li a:hover
+{
+    /* border-style: double; */
+    color: darkgreen;
+    
+    /* transition: 0.25s; */
+}
+
+.about
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 70px;
+
+    border-style: inset;
+    border-color: rgba(0, 0, 0, 0.25);
+    border-radius: 1em;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.40);
+
+    font-size: 1.21em;
+
+    cursor: default;
+}
+
+.about:hover
+{
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.60);
+    background-color: #e4ffde;
+    transition: 2s;
+}
+
+.about .aboutBox
+{
+    text-align: justify;
+    text-justify: distribute;
+    padding: 17px;
+
+    max-width: 1000px;
+}
+
+.about .about_ImageBox
+{
+    width: 10%;
+    max-width: 100px;
+    margin-left: 37px;
+}
+
+.about .about_Image
+{
+    max-width: 100px;
+}
+
+.events
+{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 17px;
+
+    background: linear-gradient(#d7fe01, #aede0f, #5cb00c, #15661d);
+
+    border-style: outset;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.events a
+{
+    text-decoration: none;
+}
+
+.events_Title
+{
+    margin: 10px 0px;
+    text-align: center;
+    color: black;
+
+    cursor: default;
+}
+.events_Title h2
+{
+    font-size: 3em;
+}
+
+.events .events_Cards
+{
+    margin: 10px 20px;
+
+    display: flex;
+    align-items: right;
+    justify-content: right;
+
+    background-color: white;
+    
+    border-style: solid;
+    border-radius: 20px;
+
+    text-align: justify;
+    text-justify: right;
+    padding: 0px 15px;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    transition: 0.1s;
+}
+
+.events .events_Cards:hover
+{
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 1);
+
+    margin: 10px 10px;
+
+    background-color: rgb(250, 250, 179);
+}
+
+.events .events_Cards h4
+{
+    font-size: 1.5em;
+}
+
+.events .events_Cards h5
+{
+    font-size: 1.25em;
+
+    color: blue;
+}
+
+.events .events_Cards .events_Thumbnail
+{
+    display: inline;
+    margin: 0px 0px 0px 37px;
+}
+
+.events .events_Cards .events_Thumbnail img
+{
+    max-width: 100px;
+}
+
+.members_Title
+{
+    margin: 10px 0px;
+    text-align: center;
+    color: black;
+
+    cursor: default;
+}
+.members_Title h2
+{
+    font-size: 3em;
+}
+
+.members
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 17px;
+
+    background: linear-gradient(#ffd200, #ff7e00, #ff5300, #d31300);
+
+    border-style: dotted;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.members a
+{
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.members .member_Card
+{
+    padding: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    justify-content: center;
+    align-items: center;
+    display: block;
+
+    background-color: white;
+
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+
+    transition: 0.1s;
+
+    /*max-width: 300px;*/
+}
+
+.members .member_Card:hover
+{
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.9);
+}
+
+.members .member_Card p
+{
+    font-size: 1.2em;
+}
+
+.members .member_Card .member_Avatar img
+{
+    max-width: 256px;
+    border-radius: 256px;
+}
+
+/*********************************************************/
+/* Reponsive design */
+
+@media (max-width: 930px)
+{
+    .members
+    {
+        display: block;
+        align-items: center;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+
+        
+    }
+}
