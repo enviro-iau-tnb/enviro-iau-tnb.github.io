@@ -28,13 +28,16 @@
         <!-- Main menu -->
         <header>
             <a href="#" class="logo"><span>ز</span>یست</a>
+            <div class="menuToggle" onclick="toggleMenu();">
+
+            </div>
             <ul class="navigation">
-                <li><a href="#banner">خانه</a></li>
-                <li><a href="#about">درباره</a></li>
-                <li><a href="#events">رویدادها</a></li>
-                <li><a href="#members">اعضاء</a></li>
-                <li><a href="#peyvand">پیوند</a></li>
-                <li><a href="#contact">تماس با ما</a></li>
+                <li><a href="#banner" onclick="toggleMenu();">خانه</a></li>
+                <li><a href="#about"  onclick="toggleMenu();">درباره</a></li>
+                <li><a href="#events" onclick="toggleMenu();">رویدادها</a></li>
+                <li><a href="#members" onclick="toggleMenu();">اعضاء</a></li>
+                <li><a href="#peyvand" onclick="toggleMenu();">پیوند</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">تماس با ما</a></li>
             </ul>
         </header>
 
@@ -192,6 +195,16 @@
             const header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
+
+        function toggleMenu()
+        {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
     </script>
 
 </html>
