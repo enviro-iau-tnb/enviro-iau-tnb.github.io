@@ -433,6 +433,20 @@ header.sticky .navigation li a:hover
     border-radius: 256px;
 }
 
+.credits
+{
+    background: navy;
+    text-align: center;
+
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+}
+.credits p
+{
+    font-family: sans-serif;
+
+    color: white;
+}
+
 /*********************************************************/
 /* Reponsive design */
 
